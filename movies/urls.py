@@ -1,7 +1,7 @@
-# from django.urls import path
-#
-#
-# app_name = "movies"
-# urlparttners = [
-#     path('', views.index, name=index)
-# ]
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.MovieView.as_view())
+]
