@@ -1,5 +1,7 @@
 from django.db import models
 
+import datetime
+
 
 # Create your models here.
 class Category(models.Model):
@@ -44,7 +46,6 @@ class Genre(models.Model):
         verbose_name = "Жанры"
         verbose_name_plural = "Жанры"
 
-import datetime
 
 class Movie(models.Model):
     title = models.CharField("Название", max_length=100)
